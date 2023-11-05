@@ -12,7 +12,7 @@
 }
 
 :root {
-    --bg-color: #081b29;
+    --bg-color: black;
     --second-bg-color: #112e42;
     --text-color: #ededed;
     --main-color: #03bafc;
@@ -78,7 +78,7 @@ section {
   display: flex;
   align-items: center;
   padding: 0 9%;
-  background: url('/images/modith_image.jpg') no-repeat;
+  background: url('modith_image.jpg') no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -193,4 +193,18 @@ section {
 }
 
 
+.modith_image-imgHover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+
+.modith_image-imgHover:hover {
+    background: var(--bg-color);
+    opacity: .8;
+}
 
