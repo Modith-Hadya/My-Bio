@@ -12,7 +12,7 @@
 }
 
 :root {
-    --bg-color: black;
+    --bg-color: rgb(0, 0, 0);
     --second-bg-color: #112e42;
     --text-color: #ededed;
     --main-color: #03bafc;
@@ -78,7 +78,7 @@ section {
   display: flex;
   align-items: center;
   padding: 0 9%;
-  background: url('modith_image.jpg') no-repeat;
+  background: url('/images/modith_image.jpg') no-repeat;
   background-size: cover;
   background-position: center;
 }
