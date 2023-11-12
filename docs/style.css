@@ -199,13 +199,13 @@ section {
     right: 0;
     width: 45%;
     height: 100%;
-    background: transparent;
+    background: var(--bg-color);
     transition: 3s;
+	opacity: .6;
 }
 
 .modith_image-imgHover:hover {
-    background: var(--bg-color);
-    opacity: .8;
+    background: transparent;
 }
 
 .about {
@@ -312,13 +312,24 @@ span{
 }
 
 .education-column .education-box {
-	border-left: 0.2rem solid #94c7ca;
+	border-left: 0.1rem solid #94c7ca;
 	margin:0 
 }
 
 .education-box .educaton-content {
 	position:relative;
 	padding-left: 2rem;
+}
+
+.education-box .educaton-content::before {
+	content:'';
+	position:absolute;
+	top:0;
+	left: -1.2rem;
+	width:2rem;
+	height:2rem;
+	background:#94c7ca;
+	border-radius:50%
 }
 
 
@@ -329,7 +340,25 @@ span{
 	border: 0.2rem solid #a6a650;
 	border-radius: 0.6rem;
 	margin-bottom: 2rem;
+	overflow:hidden;
 }
+
+.educaton-content .content::before {
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:0;
+	height:100%;
+	background:#79e47c;
+	transition:0.5s;
+	opacity:0.2;
+}
+
+.educaton-content .content:hover::before {
+	width:100%;
+}
+
 
 .educaton-content .content .year {
 	font-size: 1.5rem;
@@ -357,3 +386,154 @@ span{
 	text-align: center;
 }
 
+/*
+.skills {
+	background:#412e48;
+    margin: 0 auto;
+	padding-bottom: 5rem;
+  }
+  .skill-category {
+    margin-bottom: 20px;
+  }
+  .skill-category h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .skill-bar-container {
+    background-color: #412e48;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .skill-bar {
+    height: 20px;
+    border-radius: 5px;
+    text-align: right;
+    line-height: 20px;
+    color: white;
+    padding-right: 5px;
+  }
+  .html { background-color: #e44d26; width: 70%; }
+  .css { background-color: #2965f1; width: 55%; }
+  .jquery { background-color: #1eaa25; width: 50%; }
+  .php { background-color: #777bb4; width: 40%; }
+  .wordpress { background-color: #21759b; width: 75%; }
+  .seo { background-color: #222; width: 100%; }
+  .photoshop { background-color: #001d34; width: 70%; } */
+  
+ .skills {
+	background:#ffffff;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: auto;
+	padding-bottom: 5rem;
+	color:black;
+}
+
+.skills span{
+	color:#800909;
+}
+
+.skills .skills-row {
+	display:flex;
+	flex-wrap:wrap;
+	gap: 5rem;
+}
+
+.skills-row .skills-column {
+	flex: 1 1 40rem;
+}
+	
+.skills-column .title {
+	font-size: 2.5rem;
+	margin:0 0 1.5rem 2rem;
+}
+
+.skills-box .skills-content {
+	position:relative;
+	padding-left: 2rem;
+}
+
+
+.skills-content .content {
+	font-size: 1.2rem;
+	position:relative;
+	padding: 2rem;
+	border: 0.2rem solid #000000;
+	border-radius: 0.6rem;
+	margin-bottom: 2rem;
+	overflow:hidden;
+}
+
+.skills-content .content::before {
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:0;
+	height:100%;
+	background:#79e47c;
+	transition:0.5s;
+	opacity:0.2;
+}
+
+.skills-content .content:hover::before {
+	width:100%;
+}
+
+
+.skills-content .content .year {
+	font-size: 2.5rem;
+	color: #85e3cb;
+	padding-bottom: 0.5rem;
+	color:black;
+}
+
+.skills-content .content .year i{
+	padding-right: 0.5rem;
+}
+
+.skills-content .content h3{
+	font-size: 2rem;
+}
+
+.skills-content .content ul{
+	font-size: 1.5rem;
+	padding-top: 0.5rem;
+}
+
+
+.skills-content .content h4{
+	font-size: 1.6rem;
+	margin-top: 1.2rem;
+	text-align: center;
+}
+
+.skill-category {
+    margin-bottom: 20px;
+  }
+  .skill-category h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .skill-bar-container {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .skill-bar {
+    height: 20px;
+    border-radius: 5px;
+    text-align: right;
+    line-height: 20px;
+    color: white;
+    padding-right: 5px;
+  }
+  .html { background-color: #e44d26; width: 70%; }
+  .css { background-color: #2965f1; width: 55%; }
+  .jquery { background-color: #1eaa25; width: 50%; }
+  .php { background-color: #777bb4; width: 40%; }
+  .wordpress { background-color: #21759b; width: 75%; }
+  .seo { background-color: #222; width: 100%; }
+  .photoshop { background-color: #001d34; width: 70%; }
